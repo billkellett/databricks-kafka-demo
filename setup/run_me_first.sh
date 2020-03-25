@@ -6,6 +6,7 @@ curl -o start_kafka.sh 'https://raw.githubusercontent.com/billkellett/databricks
 curl -o stop_kafka.sh 'https://raw.githubusercontent.com/billkellett/databricks-kafka-demo/master/setup/stop_kafka.sh' -L 
 curl -o verify_kafka_running.sh 'https://raw.githubusercontent.com/billkellett/databricks-kafka-demo/master/setup/verify_kafka_running.sh' -L 
 curl -o create_kafka_topics.sh 'https://raw.githubusercontent.com/billkellett/databricks-kafka-demo/master/setup/create_kafka_topics.sh' -L 
+curl -o README_Kafka-demo.txt 'https://raw.githubusercontent.com/billkellett/databricks-kafka-demo/master/README-Kafka-demo.txt' -L 
 
 chmod +x install_kafka.sh
 chmod +x start_kafka.sh
