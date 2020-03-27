@@ -2,9 +2,9 @@
 
 echo "Starting Zookeeper..."
 kafka/kafka_2.12-2.4.1/bin/zookeeper-server-start.sh kafka/kafka_2.12-2.4.1/config/zookeeper.properties &
-sleep 15
 echo "... Zookeeper started"
 echo "Pausing 15 seconds."
+sleep 115
 
 echo "Starting Kafka..."
 kafka/kafka_2.12-2.4.1/bin/kafka-server-start.sh kafka/kafka_2.12-2.4.1/config/server.properties &
