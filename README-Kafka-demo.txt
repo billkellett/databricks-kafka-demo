@@ -7,8 +7,7 @@ I. Prerequisites (we assume you know how to provision a Linux machine on your cl
 --- ICMP (ping)
 --- SSH (port 22)
 --- Kafka communication (port 9092)
---- Zookeeper communication (port 2181)
---- Public IP address.  NOTE: it is highly recommended to use a static IP address, because reconfiguration for a new IP address on each run is cumbersome.
+--- Public IP address.  NOTE: it is highly recommended to use a static IP address, because reconfiguration of the demo for a new IP address on each run is annoying.
 
 II. One-time installation steps
 
@@ -33,12 +32,19 @@ III. Every time you start the Kafka server, perform these steps
 
 - Start Kafka and Zookeeper
 --- start_kafka.sh
---- create_kafka_topics.sh
---- verify_kafka_running.sh
+--- create_kafka_topics.sh (it's OK if this gives you an error saying topics already exist)
+--- verify_kafka_running.sh (will return a list of Kafka topics)
 
 IV. When you are ready to begin the demo
 
-- Start the event generator program, which emits 2 events per second on topic ratings_modifier
+- When the Databaricks notebook tells you, start the event generator program, which emits 2 events per second on topic ratings_modifier:
 --- java -jar kafka-event-generator-1.0-SNAPSHOT-jar-with-dependencies.jar
 
-TO BE CONTINUED!
+V. When you are finished with the demo
+
+- Stop the event generator on the Kafka server with CTRL-C
+
+- Stop Kafka and Zookeeper:
+--- ./stop_kafka.sh
+
+- Shut down the Kafka server.
