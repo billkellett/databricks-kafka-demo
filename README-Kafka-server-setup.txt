@@ -31,7 +31,7 @@ II. One-time installation steps
 III. Every time you start the Kafka server, perform these steps
 
 - Start Kafka and Zookeeper
---- ./start_kafka.sh
+--- ./start_kafka.sh (after this runs, it will be more convenient to open a new terminal to run the following scripts)
 --- ./create_kafka_topics.sh (it's OK if this gives you an error saying topics already exist)
 --- ./verify_kafka_running.sh (will return a list of Kafka topics)
 
