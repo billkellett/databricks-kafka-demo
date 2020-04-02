@@ -26,7 +26,7 @@ II. One-time installation steps
 - MANUAL EDIT STEP
 --- Open in an editor: kafka/kafka_2.12-2.4.1/config/server.properties
 --- find the line #advertised.listeners
---- uncomment the line and insert your machine's IP address.  For example, if your IP address is 1.2.3.4 the final result will look like this: advertised.listeners=PLAINTEXT://1.2.3.4:9092
+--- uncomment the line and insert your machine's IP address.  For example, if your IP address is 1.2.3.4 the final result will look like this: advertised.listeners=PLAINTEXT://1.2.3.4:9092 - NOTE: if you do not have a static IP address, you will have to do this step every time you start the machine.
 
 III. Every time you start the Kafka server, perform these steps
 
