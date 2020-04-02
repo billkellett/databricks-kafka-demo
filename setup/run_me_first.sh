@@ -22,7 +22,7 @@ echo "... event generator application download complete."
 
 echo "Downloading data for event generator..."
 mkdir data
-curl -o data/spark_streaming_workshop.rating_modifiers.csv 'https://github.com/billkellett/databricks-kafka-demo/blob/master/setup/data/spark_streaming_workshop.rating_modifiers.csv' -L 
+curl -o data/spark_streaming_workshop.rating_modifiers.csv 'https://raw.githubusercontent.com/billkellett/databricks-kafka-demo/master/setup/data/spark_streaming_workshop.rating_modifiers.csv' -L 
 echo "... data download complete."
 echo "Finished."
 
