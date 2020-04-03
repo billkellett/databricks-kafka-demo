@@ -4,9 +4,9 @@ I. Prerequisites (we assume you know how to provision a Linux machine on your cl
 
 - 1 Linux machine (does not need to be very powerfulj)
 - The machine must be configured to allow the following:
---- ICMP (ping)
---- SSH (port 22)
---- Kafka communication (port 9092)
+--- ICMP (ping inbound)
+--- SSH (port 22 inbound)
+--- Kafka communication (port 9092 inbound)
 --- Public IP address.  NOTE: it is highly recommended to use a static IP address, because reconfiguration of the demo for a new IP address on each run is annoying.
 
 II. One-time installation steps
