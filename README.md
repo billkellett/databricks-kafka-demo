@@ -1,5 +1,4 @@
 # databricks-kafka
-Demo of Databricks using Kafka as a streaming source/sink
 
 This repository contains assets for a demo of Databricks-Kafka integration.
 
