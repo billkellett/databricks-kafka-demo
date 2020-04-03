@@ -1,4 +1,4 @@
-# databricks-kafka
+# databricks-kafka-demo
 
 This repository contains assets for a demo of Databricks-Kafka integration.
 
